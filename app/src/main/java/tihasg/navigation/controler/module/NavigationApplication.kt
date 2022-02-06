@@ -7,9 +7,9 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 import tihasg.navigation.controler.module1.ModuleOneNavigationControllerImpl
-import tihasg.navigation.controler.module1.moduleOne
+import tihasg.navigation.controler.module1.di.moduleOne
 import tihasg.navigation.controler.module2.ModuleTwoNavigationControllerImpl
-import tihasg.navigation.controler.module2.moduleTwo
+import tihasg.navigation.controler.module2.di.moduleTwo
 import tihasg.navigation.controler.navigation.ModuleOneNavigationController
 import tihasg.navigation.controler.navigation.ModuleTwoNavigationController
 import tihasg.navigation.controler.navigation.NavigationController
