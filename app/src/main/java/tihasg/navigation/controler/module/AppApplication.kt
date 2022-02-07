@@ -7,9 +7,9 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 import org.koin.dsl.module
-import tihasg.navigation.controler.module.nav.CarrinhoNavControllerImpl
+import tihasg.navigation.controler.cart.CarrinhoNavControllerImpl
 import tihasg.navigation.controler.cart.di.cartModule
-import tihasg.navigation.controler.module.nav.CatalogoNavControllerImpl
+import tihasg.navigation.controler.catalog.CatalogoNavControllerImpl
 import tihasg.navigation.controler.catalog.di.catalogoModule
 import tihasg.navigation.controler.navigation.CarrinhoNavController
 import tihasg.navigation.controler.navigation.CatalogoNavController

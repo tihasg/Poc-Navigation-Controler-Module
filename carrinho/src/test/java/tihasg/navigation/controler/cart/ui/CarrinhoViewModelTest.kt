@@ -1,9 +1,8 @@
-package tihasg.navigation.controler.catalog.ui
+package tihasg.navigation.controler.cart.ui
 
 import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.nhaarman.mockitokotlin2.whenever
-import junit.framework.Assert.assertEquals
+import junit.framework.Assert
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.TestCoroutineDispatcher
@@ -19,12 +18,12 @@ import org.junit.runner.RunWith
 import org.mockito.Mock
 import org.mockito.MockitoAnnotations
 import org.mockito.junit.MockitoJUnitRunner
-import tihasg.navigation.controler.navigation.CarrinhoNavController
+import tihasg.navigation.controler.navigation.CatalogoNavController
 
 @RunWith(MockitoJUnitRunner.Silent::class)
 @ExperimentalCoroutinesApi
 
-class CatalogoViewModelTest {
+class CarrinhoViewModelTest {
 
     private val dispatcher: TestCoroutineDispatcher = TestCoroutineDispatcher()
 
@@ -32,10 +31,10 @@ class CatalogoViewModelTest {
     var rule: TestRule = InstantTaskExecutorRule()
 
     @Mock
-    private lateinit var viewModel: CatalogoViewModel
+    private lateinit var viewModel: CarrinhoViewModel
 
     @Mock
-    private lateinit var cartNavController: CarrinhoNavController
+    private lateinit var navController: CatalogoNavController
 
     @Mock
     private lateinit var context: Context
@@ -45,7 +44,7 @@ class CatalogoViewModelTest {
     fun setup() {
         Dispatchers.setMain(dispatcher)
         MockitoAnnotations.initMocks(this)
-        viewModel = CatalogoViewModel(cartNavController)
+        viewModel = CarrinhoViewModel(navController)
     }
 
     @After
@@ -56,11 +55,11 @@ class CatalogoViewModelTest {
     @Test
     fun goToCatalog() = TestCoroutineDispatcher().runBlockingTest {
         val expected = Unit
-        val actual =  viewModel.goToCatalog(context)
+        val actual =  viewModel.goToCart(context)
 
-        viewModel.goToCatalog(context)
+        viewModel.goToCart(context)
 
 
-        assertEquals(expected, actual)
+        Assert.assertEquals(expected, actual)
     }
 }

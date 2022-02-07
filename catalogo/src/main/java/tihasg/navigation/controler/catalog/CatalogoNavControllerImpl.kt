@@ -1,4 +1,4 @@
-package tihasg.navigation.controler.module.nav
+package tihasg.navigation.controler.catalog
 
 import android.content.Context
 import android.content.Intent
