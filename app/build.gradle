@@ -32,8 +32,8 @@ android {
 }
 
 dependencies {
-    implementation project(path: ':moduleOne')
-    implementation project(path: ':moduleTwo')
+    implementation project(path: ':catalogo')
+    implementation project(path: ':carrinho')
     implementation project(path: ':navigation')
 
 

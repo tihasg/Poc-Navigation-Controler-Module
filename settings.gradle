@@ -9,5 +9,5 @@ dependencyResolutionManagement {
 rootProject.name = "Navigation Controller Module"
 include ':app'
 include ':navigation'
-include ':moduleOne'
-include ':moduleTwo'
+include ':catalogo'
+include ':carrinho'

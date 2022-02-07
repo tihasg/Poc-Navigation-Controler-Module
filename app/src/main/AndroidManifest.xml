@@ -4,14 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:name=".NavigationApplication"
+        android:name=".AppApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NavigationControllerModule">
         <activity
-            android:name="tihasg.navigation.controler.module1.ui.OneActivity"
+            android:name="tihasg.navigation.controler.catalog.ui.CatalogoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="tihasg.navigation.controler.module2.ui.TwoActivity"
+            android:name="tihasg.navigation.controler.cart.ui.CarrinhoActivity"
             android:exported="true">
         </activity>
     </application>
