@@ -5,7 +5,6 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_catalogo.*
 import org.koin.android.ext.android.inject
 import tihasg.navigation.controler.catalog.R
-import tihasg.navigation.controler.navigation.CatalogoNavController
 
 class CatalogoActivity : AppCompatActivity() {
 
