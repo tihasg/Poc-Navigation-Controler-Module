@@ -23,11 +23,11 @@ class NavigationApplication : Application() {
     }
 
     class NavigationControllerImpl : NavigationController {
-        override fun module1(): ModuleOneNavigationController {
+        override fun moduleOneNavigationController(): ModuleOneNavigationController {
          return  ModuleOneNavigationControllerImpl()
         }
 
-        override fun module2(): ModuleTwoNavigationController {
+        override fun moduleTwoNavigationController(): ModuleTwoNavigationController {
             return  ModuleTwoNavigationControllerImpl()
         }
 

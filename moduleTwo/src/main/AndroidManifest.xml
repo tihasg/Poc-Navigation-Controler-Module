@@ -3,9 +3,7 @@
     package="tihasg.navigation.controler.module2">
 
     <application>
-        <activity
-            android:name=".ui.TwoActivity"
-            android:exported="false" />
+
     </application>
 
 </manifest>

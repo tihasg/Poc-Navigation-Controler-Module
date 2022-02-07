@@ -1,7 +1,7 @@
 package tihasg.navigation.controler.navigation
 
-import androidx.fragment.app.FragmentActivity
+import android.content.Context
 
 interface ModuleTwoNavigationController {
-    fun goToModule1(context: FragmentActivity)
+    fun goToActivity(context: Context)
 }

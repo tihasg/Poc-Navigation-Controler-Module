@@ -7,6 +7,6 @@ interface NavigationController {
         var instance : NavigationController? = null
     }
 
-    fun module1(): ModuleOneNavigationController
-    fun module2(): ModuleTwoNavigationController
+    fun moduleOneNavigationController(): ModuleOneNavigationController
+    fun moduleTwoNavigationController(): ModuleTwoNavigationController
 }
